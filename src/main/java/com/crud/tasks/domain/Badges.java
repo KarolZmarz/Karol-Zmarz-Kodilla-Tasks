@@ -16,5 +16,5 @@ public class Badges {
     private int votes;
 
     @JsonProperty("attachmentsByType")
-    private AttachmentsByType attachmentsByType;A
+    private AttachmentsByType attachmentsByType;
 }
