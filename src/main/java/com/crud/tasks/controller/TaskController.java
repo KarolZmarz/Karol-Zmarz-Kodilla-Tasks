@@ -28,7 +28,6 @@ public class TaskController {
         List<Task> tasks = service.getAllTasks();
         return ResponseEntity.ok(taskMapper.mapToTaskDtoList(tasks));
     }
-
     @GetMapping(value = "{taskId}")
     public ResponseEntity<TaskDto> getTask(@PathVariable Long taskId) throws TaskNotFoundException{
         return ResponseEntity.ok(taskMapper.mapToTaskDto(service.getTask(taskId)));
